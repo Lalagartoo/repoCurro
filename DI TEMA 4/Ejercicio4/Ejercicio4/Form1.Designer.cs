@@ -38,12 +38,13 @@
             this.lblTotales = new System.Windows.Forms.Label();
             this.lblSeleccionados = new System.Windows.Forms.Label();
             this.rbElim1 = new System.Windows.Forms.RadioButton();
-            this.btnElim2 = new System.Windows.Forms.RadioButton();
+            this.rbElim2 = new System.Windows.Forms.RadioButton();
             this.rbTras1 = new System.Windows.Forms.RadioButton();
             this.rbTras2 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -135,15 +136,15 @@
             this.rbElim1.UseVisualStyleBackColor = true;
             this.rbElim1.CheckedChanged += new System.EventHandler(this.rbElim1_CheckedChanged);
             // 
-            // btnElim2
+            // rbElim2
             // 
-            this.btnElim2.AutoSize = true;
-            this.btnElim2.Location = new System.Drawing.Point(6, 43);
-            this.btnElim2.Name = "btnElim2";
-            this.btnElim2.Size = new System.Drawing.Size(56, 17);
-            this.btnElim2.TabIndex = 9;
-            this.btnElim2.Text = "Lista 2";
-            this.btnElim2.UseVisualStyleBackColor = true;
+            this.rbElim2.AutoSize = true;
+            this.rbElim2.Location = new System.Drawing.Point(6, 43);
+            this.rbElim2.Name = "rbElim2";
+            this.rbElim2.Size = new System.Drawing.Size(56, 17);
+            this.rbElim2.TabIndex = 9;
+            this.rbElim2.Text = "Lista 2";
+            this.rbElim2.UseVisualStyleBackColor = true;
             // 
             // rbTras1
             // 
@@ -151,10 +152,10 @@
             this.rbTras1.Checked = true;
             this.rbTras1.Location = new System.Drawing.Point(6, 19);
             this.rbTras1.Name = "rbTras1";
-            this.rbTras1.Size = new System.Drawing.Size(56, 17);
+            this.rbTras1.Size = new System.Drawing.Size(102, 17);
             this.rbTras1.TabIndex = 10;
             this.rbTras1.TabStop = true;
-            this.rbTras1.Text = "Lista 1";
+            this.rbTras1.Text = "Lista 1 -> Lista 2";
             this.rbTras1.UseVisualStyleBackColor = true;
             this.rbTras1.CheckedChanged += new System.EventHandler(this.rbTras1_CheckedChanged);
             // 
@@ -163,15 +164,15 @@
             this.rbTras2.AutoSize = true;
             this.rbTras2.Location = new System.Drawing.Point(6, 43);
             this.rbTras2.Name = "rbTras2";
-            this.rbTras2.Size = new System.Drawing.Size(56, 17);
+            this.rbTras2.Size = new System.Drawing.Size(102, 17);
             this.rbTras2.TabIndex = 11;
-            this.rbTras2.Text = "Lista 2";
+            this.rbTras2.Text = "Lista 2 -> Lista 1";
             this.rbTras2.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.rbElim1);
-            this.groupBox1.Controls.Add(this.btnElim2);
+            this.groupBox1.Controls.Add(this.rbElim2);
             this.groupBox1.Location = new System.Drawing.Point(152, 126);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(150, 70);
@@ -234,12 +235,13 @@
         private System.Windows.Forms.Label lblTotales;
         private System.Windows.Forms.Label lblSeleccionados;
         private System.Windows.Forms.RadioButton rbElim1;
-        private System.Windows.Forms.RadioButton btnElim2;
+        private System.Windows.Forms.RadioButton rbElim2;
         private System.Windows.Forms.RadioButton rbTras1;
         private System.Windows.Forms.RadioButton rbTras2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

@@ -22,7 +22,10 @@ namespace Ejercicio4
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            toolTip1.SetToolTip(btnAniadir, "Añade el texto a la primera lista");
+            toolTip1.SetToolTip(btnQuitar, "Elimina los indices seleccionados de la lista indicada");
+            toolTip1.SetToolTip(btnTraspasar, "Traspasa los indices seleccionados de una lista a otra segun lo indicado");
+            toolTip1.SetToolTip(lst2, "Total de elementos en el listbox 2: 0");
         }
 
         private void btnAniadir_Click(object sender, EventArgs e)
@@ -104,8 +107,17 @@ namespace Ejercicio4
 
         private void actualizarLabels()
         {
+            
+            string muestra = "";
             lblTotales.Text = "Total de elementos en el listbox 1: " + lst1.Items.Count;
-            lblSeleccionados.Text = "Elementos seleccionados en el listbox 1: " + lst1.SelectedItems.Count;
+            
+            foreach(int indice in lst1.SelectedIndices)
+            {
+                muestra += indice + " ";
+            }
+            lblSeleccionados.Text = "Indices de los elementos seleccionados en listbox 1: " + muestra;
+
+            toolTip1.SetToolTip(lst2, "Total de elementos en el listbox 2: " + lst2.Items.Count);
         }
 
         private void lst1_SelectedIndexChanged(object sender, EventArgs e)
