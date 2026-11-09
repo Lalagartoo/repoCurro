@@ -1,0 +1,10 @@
+C:\Users\LucasJL\Documents\Interfaces\Tema4 (A.K.A. T4)\Ejercicio1\Ejercicio1\bin\Debug\Ejercicio1.exe.config
+C:\Users\LucasJL\Documents\Interfaces\Tema4 (A.K.A. T4)\Ejercicio1\Ejercicio1\bin\Debug\Ejercicio1.exe
+C:\Users\LucasJL\Documents\Interfaces\Tema4 (A.K.A. T4)\Ejercicio1\Ejercicio1\bin\Debug\Ejercicio1.pdb
+C:\Users\LucasJL\Documents\Interfaces\Tema4 (A.K.A. T4)\Ejercicio1\Ejercicio1\obj\Debug\Ejercicio1.csproj.AssemblyReference.cache
+C:\Users\LucasJL\Documents\Interfaces\Tema4 (A.K.A. T4)\Ejercicio1\Ejercicio1\obj\Debug\Ejercicio1.Form1.resources
+C:\Users\LucasJL\Documents\Interfaces\Tema4 (A.K.A. T4)\Ejercicio1\Ejercicio1\obj\Debug\Ejercicio1.Properties.Resources.resources
+C:\Users\LucasJL\Documents\Interfaces\Tema4 (A.K.A. T4)\Ejercicio1\Ejercicio1\obj\Debug\Ejercicio1.csproj.GenerateResource.cache
+C:\Users\LucasJL\Documents\Interfaces\Tema4 (A.K.A. T4)\Ejercicio1\Ejercicio1\obj\Debug\Ejercicio1.csproj.CoreCompileInputs.cache
+C:\Users\LucasJL\Documents\Interfaces\Tema4 (A.K.A. T4)\Ejercicio1\Ejercicio1\obj\Debug\Ejercicio1.exe
+C:\Users\LucasJL\Documents\Interfaces\Tema4 (A.K.A. T4)\Ejercicio1\Ejercicio1\obj\Debug\Ejercicio1.pdb
