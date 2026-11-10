@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lst1 = new System.Windows.Forms.ListBox();
             this.lst2 = new System.Windows.Forms.ListBox();
             this.btnAniadir = new System.Windows.Forms.Button();
@@ -66,6 +67,7 @@
             this.lst2.Name = "lst2";
             this.lst2.Size = new System.Drawing.Size(164, 108);
             this.lst2.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.lst2, "Total de elementos en el listbox 2: 0");
             // 
             // btnAniadir
             // 
@@ -74,6 +76,7 @@
             this.btnAniadir.Size = new System.Drawing.Size(120, 23);
             this.btnAniadir.TabIndex = 2;
             this.btnAniadir.Text = "Añadir";
+            this.toolTip1.SetToolTip(this.btnAniadir, "Añade el texto a la primera lista");
             this.btnAniadir.UseVisualStyleBackColor = true;
             this.btnAniadir.Click += new System.EventHandler(this.btnAniadir_Click);
             // 
@@ -84,6 +87,7 @@
             this.btnQuitar.Size = new System.Drawing.Size(120, 23);
             this.btnQuitar.TabIndex = 3;
             this.btnQuitar.Text = "Elimina de 1";
+            this.toolTip1.SetToolTip(this.btnQuitar, "Elimina los indices seleccionados de la lista indicada");
             this.btnQuitar.UseVisualStyleBackColor = true;
             this.btnQuitar.Click += new System.EventHandler(this.btnQuitar_Click);
             // 
@@ -94,6 +98,7 @@
             this.btnTraspasar.Size = new System.Drawing.Size(120, 23);
             this.btnTraspasar.TabIndex = 4;
             this.btnTraspasar.Text = "Traspaso 1 -> 2";
+            this.toolTip1.SetToolTip(this.btnTraspasar, "Traspasa los indices seleccionados de una lista a otra segun lo indicado");
             this.btnTraspasar.UseVisualStyleBackColor = true;
             this.btnTraspasar.Click += new System.EventHandler(this.btnTraspasar_Click);
             // 
@@ -212,9 +217,9 @@
             this.Controls.Add(this.btnAniadir);
             this.Controls.Add(this.lst2);
             this.Controls.Add(this.lst1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
