@@ -20,18 +20,42 @@ namespace Ejercicio3
             this.Text = "Visor de imágenes";
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btnNewImg_Click(object sender, EventArgs e)
         {
-            fileDialog.ShowDialog(this);
-            Form2 f2 = new Form2(fileDialog.FileName);
-            if (chkModal.Checked) 
-            { 
+            
+            
+            if (fileDialog.ShowDialog(this) != DialogResult.OK)
+            {
+                return;
+            }
+            
+            try
+            {
+                using (Image img = Image.FromFile(fileDialog.FileName))
+                {
+                    
+                }
+            }
+            catch (OutOfMemoryException ex)
+            {
+                MessageBox.Show("El archivo seleccionado no es una imagen válida.", "Imagen errónea", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show("El archivo seleccionado no es una imagen válida.", "Imagen errónea", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            catch (System.IO.FileNotFoundException ex)
+            {
                 
+                MessageBox.Show("El archivo seleccionado no es una imagen válida.", "Imagen errónea", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            Form2 f2 = new Form2(fileDialog.FileName);
+            if (chkModal.Checked)
+            {
                 f2.ShowDialog();
             }
             else
@@ -39,6 +63,7 @@ namespace Ejercicio3
                 f2.Show();
             }
         }
+        
 
         private void chkModal_CheckedChanged(object sender, EventArgs e)
         {
@@ -56,7 +81,7 @@ namespace Ejercicio3
 
         private void timerTitulo_Tick(object sender, EventArgs e)
         {
-            if (seg > 60)
+            if (seg > 59)
             {
                 seg = 0;
                 min += 1;

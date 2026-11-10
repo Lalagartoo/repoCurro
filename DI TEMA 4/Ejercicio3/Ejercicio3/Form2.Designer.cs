@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.picImagen = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.seDeformaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,14 +61,14 @@
             // seDeformaToolStripMenuItem
             // 
             this.seDeformaToolStripMenuItem.Name = "seDeformaToolStripMenuItem";
-            this.seDeformaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.seDeformaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.seDeformaToolStripMenuItem.Text = "Se deforma";
             this.seDeformaToolStripMenuItem.Click += new System.EventHandler(this.seDeformaToolStripMenuItem_Click);
             // 
             // noSeDeformaToolStripMenuItem
             // 
             this.noSeDeformaToolStripMenuItem.Name = "noSeDeformaToolStripMenuItem";
-            this.noSeDeformaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.noSeDeformaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.noSeDeformaToolStripMenuItem.Text = "No se deforma";
             this.noSeDeformaToolStripMenuItem.Click += new System.EventHandler(this.noSeDeformaToolStripMenuItem_Click);
             // 
@@ -77,6 +78,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.picImagen);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.picImagen)).EndInit();
